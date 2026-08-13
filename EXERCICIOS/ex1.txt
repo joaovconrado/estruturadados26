@@ -1,3 +1,0 @@
-crie um programa que seja capaz de ler 10 números inteiros e separa-los em dois vetores, um para os impares e outro para os pares
-
-ao final, imprima na tela os pares e depois os ímpares

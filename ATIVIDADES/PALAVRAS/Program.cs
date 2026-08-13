@@ -32,19 +32,19 @@ int [] numbers;
 numbers = new int[5];
 
 // Atribuindo valores ao vetor
-number[0] = 10;
-number[1] = 20;
-number[2] = 30;
-number[3] = 40;
-number[4] = 50;
+numbers[0] = 10;
+numbers[1] = 20;
+numbers[2] = 30;
+numbers[3] = 40;
+numbers[4] = 50;
 
 // É possível declarar o vetor e já definir e atribuir
 int[]number2 = new int[] {100, 200, 300};
 int[] number3 = {1000, 2000, 3000, 4000};
 
 // Peracorrendo um vetor e adicionando valores dinamicamente
-Console.Writeline("Iniciando com vetores de números inteiros");
-int size = Convert.ToInt32(Console.Readline());
+Console.WriteLine("Iniciando com vetores de números inteiros");
+int size = Convert.ToInt32(Console.ReadLine());
 int[] myArray = new int[size];
 
 int total = 0; //Acumulador
@@ -59,7 +59,7 @@ for(int i = 0; i < myArray.Length; i++)
         Console.ReadLine()
     );
 
-    total + myArray[i];
+    total += myArray[i];
     counter++;
 }
 
