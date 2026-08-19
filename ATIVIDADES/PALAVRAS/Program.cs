@@ -39,10 +39,10 @@ numbers[3] = 40;
 numbers[4] = 50;
 
 // É possível declarar o vetor e já definir e atribuir
-int[]number2 = new int[] {100, 200, 300};
+int[] number2 = new int[] {100, 200, 300};
 int[] number3 = {1000, 2000, 3000, 4000};
 
-// Peracorrendo um vetor e adicionando valores dinamicamente
+// Percorrendo um vetor e adicionando valores dinamicamente
 Console.WriteLine("Iniciando com vetores de números inteiros");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] myArray = new int[size];
