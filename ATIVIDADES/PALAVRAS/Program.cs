@@ -1,4 +1,6 @@
-﻿string firstName = "Joao";
+﻿using System.Globalization;
+
+string firstName = "Joao";
 string lastName = "Conrado";
 
 string note = lastName.ToUpper() + " " + firstName;
@@ -65,3 +67,21 @@ for(int i = 0; i < myArray.Length; i++)
 
 Console.WriteLine("Totalizador = " + total);
 Console.WriteLine("Contagem = " + counter);
+
+//ex: os nomes dos meses do ano
+
+string[] months = new string[12];
+for(int i = 1; i <= 12; i++)
+{
+    DateTime firstDay = new DateTime(DateTime.Now.Year, i, 1); //DateTime = PascalCase / fistDay = camelCase
+    DateTime lastDayMonthBefore = firstDay.AddDays(-1);
+    
+    string monthName = firstDay.ToString("MMMM", CultureInfo.CreateSpecificCulture("pt-br"));
+
+    months[i - 1] = monthName;
+}
+
+foreach(string monthName in months)
+{
+    Console.WriteLine($"---> {monthName}");
+}
